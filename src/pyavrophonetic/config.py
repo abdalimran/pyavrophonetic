@@ -23,15 +23,15 @@ along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 # Imports
-import os
+import pathlib
 import json
 import io
 
 # Constants
 # -- Path to current directory
-BASE_PATH = os.path.dirname(__file__)
+BASE_PATH = pathlib.Path.cwd()
 # -- path to avrodict.json
-AVRO_DICT_FILE = os.path.abspath(os.path.join(BASE_PATH,"/resources/avrodict.json"))
+AVRO_DICT_FILE = BASE_PATH / "resources/avrodict.json"
 # -- Loads json data from avrodict.json
 AVRO_DICT = json.load(io.open(AVRO_DICT_FILE, encoding='utf-8'))
 # -- Shortcut to vowels
