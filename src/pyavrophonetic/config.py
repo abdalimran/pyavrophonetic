@@ -23,22 +23,24 @@ along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 # Imports
-import pathlib
 import json
 import io
-
+import pkgutil
+ 
 # Constants
-# -- Path to current directory
-BASE_PATH = pathlib.Path.cwd()
-# -- path to avrodict.json
-AVRO_DICT_FILE = BASE_PATH / "resources/avrodict.json"
+AVRO_DICT_FILE = pkgutil.get_data(__name__, "resources/avrodict.json")
+
 # -- Loads json data from avrodict.json
-AVRO_DICT = json.load(io.open(AVRO_DICT_FILE, encoding='utf-8'))
+AVRO_DICT = json.loads(AVRO_DICT_FILE)
+
 # -- Shortcut to vowels
 AVRO_VOWELS = set(AVRO_DICT['data']['vowel'])
+
 # -- Shortcut to consonants
 AVRO_CONSONANTS = set(AVRO_DICT['data']['consonant'])
+
 # -- Shortcut to case-sensitives
 AVRO_CASESENSITIVES = set(AVRO_DICT['data']['casesensitive'])
+
 # -- Shortcut to number
 AVRO_NUMBERS = set(AVRO_DICT['data']['number'])

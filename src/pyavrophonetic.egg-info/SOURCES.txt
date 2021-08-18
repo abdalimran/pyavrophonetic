@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/pyavrophonetic/__init__.py
+src/pyavrophonetic/avro.py
+src/pyavrophonetic/config.py
+src/pyavrophonetic.egg-info/PKG-INFO
+src/pyavrophonetic.egg-info/SOURCES.txt
+src/pyavrophonetic.egg-info/dependency_links.txt
+src/pyavrophonetic.egg-info/not-zip-safe
+src/pyavrophonetic.egg-info/top_level.txt
+src/pyavrophonetic/resources/avrodict.json
+src/pyavrophonetic/utils/__init__.py
+src/pyavrophonetic/utils/count.py
+src/pyavrophonetic/utils/validate.py
