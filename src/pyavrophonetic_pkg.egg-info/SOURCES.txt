@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyavrophonetic_pkg.egg-info/PKG-INFO
+src/pyavrophonetic_pkg.egg-info/SOURCES.txt
+src/pyavrophonetic_pkg.egg-info/dependency_links.txt
+src/pyavrophonetic_pkg.egg-info/top_level.txt
+src/utils/__init__.py
+src/utils/count.py
+src/utils/validate.py
